@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Validator </title>
+</head>
+<body>
+  <div class="signupSection">
+    <div class="info" id="info">
+      <h2> Name and Password Validation</h2>
+      <p> Using JavaScript </p>
+      <p id=>* No submit action used here !! <br> It's will just validate the name and password before submit </p>
+    </div>
+    <form action="#" >
+      <h2>Sign Up</h2>
+      <ul class="noBullet">
+        <li>
+          <label for="username"></label>
+          <input type="text" class="inputFields" id="username" name="username" placeholder="Username" value="" oninput="return NameValidation(this.value)" required/>
+        </li>
+        <li>
+          <label for="password"></label>
+          <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return userpasswordValidation(this.value)" required/>
+        </li>
+        <li id="center-btn">
+          <input type="submit" id="join-btn" name="join" alt="Join" value="Join">
+        </li>
+      </ul>
+    </form>
+  </div>
+      <script src="main.js"></script>
+</body>
+</html>
