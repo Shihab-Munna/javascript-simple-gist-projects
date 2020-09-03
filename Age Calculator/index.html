@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+</head>
+<body>
+    <div id="container">
+        <h2>Age Calculator</h2>
+            <form id="form" autocomplete="off">
+                <h5>Input Must Be In Number</h5>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="date">
+                            Date Of Birth:
+                        </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" maxlength="2" size="2" id="date" placeholder="Date" required/>
+                        <input type="text" maxlength="2" size="2" id="month" placeholder="Month" autocomplete="on" required/>
+                        <input type="text" maxlength="4" size="4" id="year" placeholder="Year" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">
+                        <label for="date2">
+                            Today's Date:
+                        </label>
+                    </div>
+
+                    <div class="col-2">
+                        <input type="text" maxlength="2" size="2" id="date2" placeholder="Date"/>
+                        <input type="text" maxlength="2" size="2" id="month2" placeholder="Month"/>
+                        <input type="text" maxlength="4" size="4" id="year2" placeholder="Year"/>
+                    </div>
+                </div>
+                <br>
+                <button class="calbtn draw-border" id="calbtn">Calculate</button>
+                <br />
+                <span id="age"></span><br>
+                <span id="months"></span><br>
+                <span id="days"></span><br>
+            </form>
+        </div>
+       
+           
+    
+    
+    <script src="main.js"></script>a
+</body>
+</html>
