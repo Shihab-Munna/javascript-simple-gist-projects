@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+body {
+    font-family: 'Audiowide';
+    background-color: whitesmoke;
+}
+
+#container {
+    font-family: 'Audiowide';
+    text-align: center;
+    max-width: 50vw;
+    padding: 20px;
+    background-color: skyblue;
+    max-height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+    margin: auto;
+    border-radius: 10px;
+    border: 4px solid cornsilk;
+    -webkit-box-shadow: 0px 4px 21px 16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 21px 16px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 21px 16px rgba(0,0,0,0.75);
+}
+
+#container h2 {
+    color: black;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+#form{
+    margin-top: 20px;
+    
+}
+input[type='date'] {
+    padding: 5px 10px;
+    border: 1px solid #bdc3c7;
+    outline: 0;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+#calbtn {
+    border: 0;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #d35400;
+    color: white;
+    font-size: 20px;
+    outline: 0;
+}
+#calbtn:hover, #calbtn:active {
+    background-color: #c0392b;
+    outline: 0;
+    font-weight: bolder;
+    border: 2px 0px dashed;
+}
+
+span {
+    padding-top:10px ;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+@media only screen and (max-width:800px) {
+     #container h2 {
+        color: black;
+        font-size: 15px;
+    }
+
+    #calbtn {
+        border: 2px solid white;
+        padding: 5px 10px;
+        font-size: 15px;
+        outline: 0;
+        width: 100%;
+    }
+
+    h5 {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    input[type='date'] {
+        float: left;
+    }
+    label {
+        padding: 6px 6px 6px 0;
+        display: inline-block;
+        font-size: 15px;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bolder;
+        color: black;
+    }
+    
+     
+
+  }
+  @media only screen and (max-width:500px) {
+
+    #container {
+        height: 70vh;
+    }
+
+    input[type='date'] {
+        padding: 1px 4px;
+        border: 1px solid #bdc3c7;
+        outline: 0;
+        color: #2980b9;
+        font-weight: bold;
+        float: left;
+    }
+    #container h2 {
+        color: black;
+        font-size: 15px;
+    }
+
+    #calbtn {
+        border: 2px solid white;
+        padding: 5px 10px;
+        font-size: 10px;
+        outline: 0;
+        width: 100%;
+    }
+
+    h5 {
+        margin: 0;
+        font-size: 10px;
+    }
+    label {
+        padding: 6px 6px 6px 0;
+        display: inline-block;
+        font-size: 15px;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bolder;
+        color: black;
+    }
+    
+
+  }
