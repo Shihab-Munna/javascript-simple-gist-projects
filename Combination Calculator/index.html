@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NcR Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calculatorWrap">
+        <div class="calculatorForm" id ="Calculatorform">
+            <div itemprop="name" class="calculatorTitle"> Combinations <sup>n</sup>C<sub>r</sub> Calculator</div>
+            <div class="formula"><p>Formula <br> <sup>n</sup>C<sub>r</sub>  = n! / r! * (n - r)!</p></div>
+            <div class="calculatorInputs"><span class="MathJax_Preview" style="color: inherit;"></span>
+            <div class="note">n choose r</div>
+            <div class="table commonTable">
+                <div class="row">
+                    <div class="cell">
+                        <label for="n">n <span class="note small">(objects)</span> = </label>
+                    </div>
+                    <div class="cell">
+                        <input name="n" id="n" value="" class="nmbr_int int" type="text" title="positive integer number 1,2,3..." maxlength="4" placeholder="n" required="" autofocus="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <label for="r">r <span class="note small">(sample)</span> = </label>
+                    </div>
+                    <div class="cell">
+                        <input name="r" id="r" value="" class="nmbr_int int" type="text" title="positive integer number 1,2,3..." maxlength="4" placeholder="r" required="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculatorButton" id="actionCalculate">
+            <input type="submit" value="Calculate" class="btn" name="calculateButton" id="calculateButton" onclick="result();">
+        </div>
+            <div class="calculatorButton" id="actionClear">
+                <input type="reset" name="reset" value="Clear" class="btn" onclick=" resetCalculator(this.form)">
+            </div>
+
+            <div id="calculatorAnswer"> Answer: <p id="answer"> </p>
+                </div>
+            </div>
+
+        </div>
+        
+        
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
