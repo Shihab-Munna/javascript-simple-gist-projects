@@ -1,0 +1,169 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    color: #000000;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    font-weight: bold;
+}
+
+body {
+    overscroll-behavior-y: contain;
+}
+
+.main {
+    float: left;
+}
+
+.calculatorWrap {
+    background: #d6d1d1;
+    padding: 0.5em 0.5em 0.5em 0.6em;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 0.9em;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    float: left;
+}
+
+div.calculatorTitle {
+    color: #fff;
+    background-color: #B64B39;
+    font-weight: bold;
+    margin: -0.3em -0.3em 1em -0.3em;
+    border-bottom: 1px solid #aaa;
+    padding: 0.3em;
+    text-align: center;
+    border-radius: 4px;
+    _color: #333;
+    _background-color: #FFF;
+    _border: 1px solid #aaa;
+}
+
+.formula p {
+    text-align: center;
+}
+.note {
+    text-align: center;
+  
+}
+
+
+#actionCalculate {
+    float: Right;
+}
+
+#actionClear {
+    float: left;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#calculatorAnswer {
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin: 0em -0.4em -0.4em -0.6em;
+    margin-top: 5em;
+    padding: 0.4em;
+    
+    font-size: 100%;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+div.row {
+    display: table-row;
+}
+
+div.cell {
+    display: table-cell;
+}
+
+div.commonTable {
+    margin: 1em auto 1em auto;
+}
+
+div.commonTable div.cell {
+    padding: 4px;
+}
+
+div.commonTable div.headerCell {
+    text-align: center;
+    font-weight: bold;
+}
+
+fieldset div.commonTable {
+    margin: 0em auto 0em auto;
+}
+
+div.calculatorInputs div.commonTable .row .cell:first-child {
+    text-align: right;
+}
+
+div.defaultTable {
+    margin: 1em auto 1em auto;
+}
+
+div.defaultTable div.cell {
+    padding: 4px 4px 10px 4px;
+}
+
+div.defaultTable div.headerCell {
+    background: #d9d9d9;
+    font-weight: bold;
+}
+
+
+.btn {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: #000;
+    border: 1px solid #999;
+    background-color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover,
+.btn:active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
+    border-color: #000 \9;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 100%;
+    
+    }
+  }
+  
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .main {
+      width: 100%;
+    }
+
+  }
